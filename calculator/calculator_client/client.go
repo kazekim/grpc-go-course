@@ -7,6 +7,7 @@ import (
 	"grpc-go-course/calculator/calculatorpb"
 	"io"
 	"log"
+	"time"
 )
 
 func main() {
@@ -26,6 +27,8 @@ func main() {
 	doServerStreaming(c)
 
 	doClientStreaming(c)
+
+	doBiDirectionalStreaming(c)
 }
 
 func doUnary(c calculatorpb.CalculatorServiceClient) {
@@ -89,4 +92,59 @@ func doClientStreaming(c calculatorpb.CalculatorServiceClient) {
 	}
 
 	fmt.Printf("The average is: %v\n", res.GetAverage())
+}
+
+func doBiDirectionalStreaming(c calculatorpb.CalculatorServiceClient) {
+	fmt.Println("Start to do a Find Maximum BiDirectional Streaming RPC...")
+
+	stream, err := c.FindMaximum(context.Background())
+
+	if err != nil {
+		log.Fatalf("Error while opening stream and calling FindMaximum: %v", err)
+	}
+
+	waitC := make(chan struct{})
+
+	// send go routine
+
+	go func() {
+
+		numbers := []int32{4, 7, 11, 9, 2, 6, 33}
+
+		for _, number := range numbers {
+
+			fmt.Println("Sending number: ", number)
+			stream.Send(&calculatorpb.FindMaximumRequest{
+				Number: number,
+			})
+
+			time.Sleep(1000 * time.Millisecond)
+		}
+
+		stream.CloseSend()
+	}()
+	// receive go routine
+
+	go func() {
+
+		for {
+
+			res, err := stream.Recv()
+			if err == io.EOF {
+				break
+			}
+
+			if err != nil {
+				log.Fatalf("Problem while reading server stream: %v", err)
+				break
+			}
+
+			maximum := res.GetMaximumNumber()
+			fmt.Println("Received a new maximum number of ...: ", maximum)
+		}
+
+		close(waitC)
+	}()
+
+	<-waitC
 }
