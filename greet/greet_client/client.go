@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
-	"grpc-go-course/greetpb"
+	"grpc-go-course/greet/greetpbreetpb"
 	"log"
 )
 
