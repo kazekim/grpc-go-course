@@ -4,6 +4,8 @@ import (
 	"context"
 	"fmt"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"grpc-go-course/greet/greetpb"
 	"io"
 	"log"
@@ -26,6 +28,8 @@ func main() {
 	doServerStream(c)
 	doClientStream(c)
 	doBidirectionalStream(c)
+	doUnaryWithDeadline(c, 5 * time.Second) // should complete
+	doUnaryWithDeadline(c, 1 * time.Second) // should timeout
 }
 
 func doUnary(c greetpb.GreetServiceClient) {
@@ -204,4 +208,34 @@ func doBidirectionalStream(c greetpb.GreetServiceClient) {
 	// block until everything is done
 
 	<-waitC
+}
+
+func doUnaryWithDeadline(c greetpb.GreetServiceClient, timeout time.Duration) {
+	fmt.Println("Start to do a Unary With Deadline RPC...")
+	req := &greetpb.GreetWithDeadlineRequest{
+		Greeting: &greetpb.Greeting{
+			FirstName: "Jirawat",
+			LastName: "Harnsiriwatanakit",
+		},
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), timeout)
+	defer cancel()
+
+	res, err := c.GreetWithDeadline(ctx, req)
+	if err != nil {
+
+		statusErr, ok := status.FromError(err)
+		if ok {
+			if statusErr.Code() == codes.DeadlineExceeded {
+				fmt.Println("Timeout was hit! Deadline was exceeded")
+			}else{
+				fmt.Printf("Unexpected error: %v\n", statusErr)
+			}
+		}else{
+			log.Fatalf("error while calling Greet With Deadline RPC: %v", err)
+		}
+
+		return
+	}
+	log.Println("Response from Greet With Deadline: ", res.Result)
 }
