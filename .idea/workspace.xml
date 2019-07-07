@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e2b6d9d-9282-401f-8a76-37c37b9b0c99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/calculator_client/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/calculator_client/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/calculator_server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/calculator_server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/calculatorpb/calculator.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/calculatorpb/calculator.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculator/calculatorpb/calculator.proto" beforeDir="false" afterPath="$PROJECT_DIR$/calculator/calculatorpb/calculator.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greet/greetpb/greet.proto" beforeDir="false" afterPath="$PROJECT_DIR$/greet/greetpb/greet.proto" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,12 +16,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="460">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -36,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.pb.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="526" column="58" lean-forward="true" selection-start-line="526" selection-start-column="4" selection-end-line="526" selection-end-column="58" />
+            <state relative-caret-position="390">
+              <caret line="492" column="4" selection-start-line="492" selection-start-column="4" selection-end-line="492" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -45,65 +56,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculator/calculator_server/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+            <state relative-caret-position="925">
+              <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/calculator/calculator_client/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
-              <folding>
-                <element signature="e#14#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.pb.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="569" column="4" selection-start-line="569" selection-start-column="4" selection-end-line="569" selection-end-column="57" />
-              <folding>
-                <element signature="e#104#308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greet/greet_server/server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-              <folding>
-                <element signature="e#14#137#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/greet/greet_client/client.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="186" column="13" lean-forward="true" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
-              <folding>
-                <element signature="e#14#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state relative-caret-position="203">
+              <caret line="168" column="56" lean-forward="true" selection-start-line="168" selection-start-column="56" selection-end-line="168" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -125,6 +88,7 @@
       <find>interface</find>
       <find>server interface</find>
       <find>server inter</find>
+      <find>squareroot</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -134,13 +98,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/greet/greetpb/greet.proto" />
         <option value="$PROJECT_DIR$/greet/greet_server/server.go" />
         <option value="$PROJECT_DIR$/greet/greet_client/client.go" />
-        <option value="$PROJECT_DIR$/calculator/calculatorpb/calculator.proto" />
         <option value="$PROJECT_DIR$/generate.sh" />
+        <option value="$PROJECT_DIR$/calculator/calculatorpb/calculator.proto" />
         <option value="$PROJECT_DIR$/calculator/calculator_server/server.go" />
         <option value="$PROJECT_DIR$/calculator/calculator_client/client.go" />
+        <option value="$PROJECT_DIR$/greet/greetpb/greet.proto" />
       </list>
     </option>
   </component>
@@ -155,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,10 +172,15 @@
               <item name="greet" type="462c0819:PsiDirectoryNode" />
               <item name="greetpb" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="grpc-go-course" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,14 +226,9 @@
     <frame x="56" y="23" width="1864" height="932" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26070252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3297619" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -273,29 +236,25 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297619" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297619" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.proto">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.proto" />
     <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.pb.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="8415">
           <caret line="569" column="4" selection-start-line="569" selection-start-column="4" selection-end-line="569" selection-end-column="57" />
           <folding>
             <element signature="e#104#308#0" expanded="true" />
@@ -305,28 +264,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/greet/greet_server/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="88" column="10" lean-forward="true" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-          <folding>
-            <element signature="e#14#137#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1170">
+          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/greet/greet_client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="186" column="13" lean-forward="true" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2670">
+          <caret line="186" column="13" selection-start-line="186" selection-start-column="13" selection-end-line="186" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state relative-caret-position="505">
+          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="492" column="4" selection-start-line="492" selection-start-column="4" selection-end-line="492" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -337,27 +297,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calculator/calculatorpb/calculator.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="526" column="58" lean-forward="true" selection-start-line="526" selection-start-column="4" selection-end-line="526" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calculator/calculator_server/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+        <state relative-caret-position="925">
+          <caret line="136" column="39" lean-forward="true" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/calculator/calculator_client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="115" column="50" selection-start-line="115" selection-start-column="50" selection-end-line="115" selection-end-column="50" />
-          <folding>
-            <element signature="e#14#117#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="168" column="56" lean-forward="true" selection-start-line="168" selection-start-column="56" selection-end-line="168" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>
